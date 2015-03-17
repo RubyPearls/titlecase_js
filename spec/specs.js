@@ -3,6 +3,10 @@ describe("titleCase", function() {
     expect(titleCase("cat")).to.equal("Cat");
   });
 
+  it("capitalizes the first letter of a word even in camelcase", function() {
+    expect(titleCase("hApPY")).to.equal("Happy");
+  });
+
   it("capitalizes the first the first letter of each word in a title", function() {
   	expect(titleCase("the black panther")).to.eq("The Black Cat");
   });
